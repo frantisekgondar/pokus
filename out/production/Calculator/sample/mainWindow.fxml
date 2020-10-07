@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sample.ControllerMainWindow"
+      prefHeight="500.0" prefWidth="500.0" spacing="10">
+    <GridPane alignment="CENTER">
+        <TextField text="" GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="display"/>
+    </GridPane>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="7" prefWidth="50" textFill="#347280" onAction = "#napisCislo"/>
+        <Button text="8" prefWidth="50" textFill="blue"    onAction="#napisCislo"  />
+        <Button text="9" prefWidth="50" textFill="blue" />
+        <Button text="/" prefWidth="50" textFill="red" />
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="4" prefWidth="50"  textFill="blue"/>
+        <Button text="5" prefWidth="50" textFill="blue" />
+        <Button text="6" prefWidth="50"  textFill="blue"/>
+        <Button text="*" prefWidth="50" textFill="red" />
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="1" prefWidth="50" textFill="blue" />
+        <Button text="2" prefWidth="50" textFill="blue" />
+        <Button text="3" prefWidth="50" textFill="blue" />
+        <Button text="-" prefWidth="50" textFill="red" />
+    </HBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="0" prefWidth="110" textFill="blue" />
+        <Button text="=" prefWidth="50"  />
+        <Button text="+" prefWidth="50" textFill="red" />
+    </HBox>
+
+</VBox>
